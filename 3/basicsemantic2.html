@@ -1,78 +1,71 @@
-<!DOCTYPE html>  <!-- basicChar.html -->
-<html lang="ko">
-<head>
-<meta charset="utf-8"/>
-<meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+<!doctype html> <!-- basicSemantic2.html -->
+<html>
+<head><meta charset="utf-8"/>
+<meta name ="viewport"content="width=device-width,initial-scale=1"/>
 <style>
-header, nav, section, article, aside, footer
-{border:1px solid gray; margin:5px; padding:8px; width:1000px;}
-headerimg{width:990px; height:200px;}
-section{width:750px; float:left;}
-section section{width:725px; float:left;}
-aside{width:221px; float:left; line-height:30px;}
-footer{height:50px; clear:both;}
-nav ul{margin:0; padding:0;}
-nav ul li{display:inline; margin:5px;}
-aside ul{margin:0; padding:0;}
-aside ul li{display:block; margin:5px;}
-
-a:link{
-color:blue; backgroud-color:transparent; text-decoration:none;}
-a:visited{
-color:pink; backgroud-color:transparent; text-decoration:none;}
-a:hover:red; backgroud-color:transparent; text-decoration:none;}
-a:active{
-color:blue; backgroud-color:transparent; text-decoration:none;}
-aside ul li img{width:50px; height:50px;}
+ header, nav, section, article, aside, footer
+ {border:1px solid gray; margin:5px; padding:8px; width:1000px;}
+ headerimg{width:990px; height:200px;}
+ section{width:750px; float:left;}
+ section section{width:725px; float:left;}
+ aside{width:221px; float:left; line-height:30px;}
+ footer{height:50px; clear:both;}
+ nav ul{margin:0px; padding:0px;}
+ nav ul li{display:inline; margin:5px;}
+ aside ul{margin:0px; padding:0px;}
+ aside ul li{display:block; margin:5px;}
+ aside ul li img{width:50px; height:50px;}
+ a:link {
+   color:blue; background-color:transparent; text-decoration:none;}
+ a:visited {
+   color:pink; background-color:transparent; text-decoration:none;}
+ a:hover {
+   color:red; background-color:transparent; text-decoration:underline;}
+ a:active {
+   color:blue; background-color:transparent; text-decoration:none;}
 </style>
-
-<title>시멘틱 학습</title>
-</head>
+<title>시멘틱 학습</title></head>
 <body>
-<header>
-<h2>실습을 환영합니다</h2>
-<img src="http://postfiles14.naver.net/MjAxNzAzMjNfMTc2/MDAxNDkwMjcxNTkwNTA3.--qiL15EqtphFXUSz8kVjCthRoTuOI0JBLJmF_xKdaYg.QjpbF1w2UAyVnJU1Ethy1La3tadI3_JuN1GGF4Mj4SQg.JPEG.waypop/hello-2015466_1920.jpg?type=w2" alt="안녕하세요"/>
-</header>
-<nav>
-<ul>
-<li id="home"><a href="http://www.naver.com" target="_blank">네이버(새윈도우)</a></li>
-<li id="intro"><a href="anchor2.html">사이트내문서이동</a></li>
-<li id="server"><a href="#chapter1">제1장이동(북마크이동)</a></li>
-</ul></nav>
-<section>
-<section>
-<h3 id="chapter1">제1장</h3>
-<p>제1장 입니다. 제 1장은 다음을 정의합니다.</p>
-<p>다음</p>
-<a href="http://www.google.com" target="_blank">구글이동(새윈도우)<br/></a>
-<a href="anchor2.html">사이트문서내이동<br/></a>
-<a href="#chapter3">제3장문서내이동(북마크이동)<br/></a>
+ <header>
+  <h2>실습을 환영합니다</h2>
+  <img src="http://postfiles14.naver.net/MjAxNzAzMjNfMTc2/MDAxNDkwMjcxNTkwNTA3.--qiL15EqtphFXUSz8kVjCthRoTuOI0JBLJmF_xKdaYg.QjpbF1w2UAyVnJU1Ethy1La3tadI3_JuN1GGF4Mj4SQg.JPEG.waypop/hello-2015466_1920.jpg?type=w2"/>
+ </header>
+ <nav>
+  <ul>
+  <li><a href="http://www.naver.com"target="_blank">네이버(새윈도우)</a></li>
+  <li><a href="anchor2.html">사이트내문서이동</a></li>
+  <li><a href="#chapter1">제1장이동(북마크이동)</a></li></ul>
+</nav>
+ <section>  <!-- main -->
+ <section><h3 id="chapter1">제1장</h3>
+  <p>제1장입니다. 제1장은 다음을 정의합니다.</p>
+  <p>다음</p>
+  <a href="http://www.google.com"target="_blank">구글이동(새윈도우)</a><br/>
+  <a href="anchor2.html">사이트내문서이동</a><br/>
+  <a href="#chapter3">제3장이동(북마크이동)</a><br/></section>
+ <section><h3 id="chapter2">제 2장</h3>
+  <p>제2장입니다. 제 2장은 무엇을 정의합니다.</p>
+  <p>HTML과 같은 하이퍼미디어에서, 노드는 HTML문서, 멀티미디어 정보를 표현하는 기본단위이고,
+     링크는 노드간을 연결하며, 앵커는 링크의 출발점 또는 도착점을 의미합니다. </p>
+  <p>제1장에서 공부한 내용이 궁금하다면 다음을 <a href="#chapter1">클릭</a>하세요</p></section>
+ <section><h3 id="chapter3">제3장</h3>
+  <p>제 3장입니다. 제 3장은 무엇을 정의합니다.</p>
+  <table><tr><th>이동주소</th><th>사이트명</th><th>설명</th></tr>
+  <tr><td>구글</td><td><a href="http://www.google.com">구글</a></td><td>구글</td></tr>
+  <tr><td>사이트 다른문서</td><td><a href="anchor2.html">anchor2.html로 이동</a></td><td>anchor2</td></tr>
+  <tr><td>제 1장</td><td><a href="#chapter1">제 1장이동(북마크이동)</a></td><td>제1장</td></tr></table>
 </section>
-<section>
-<h3 id="chapter2">제2장</h3>
-<p>제2장 입니다. 제 2장은 무엇을 정의합니다.</p>
-<p>HTML과 같은 하이퍼미디어에서, 노드는 HTML문서, 멀티미디어 정보를 표현하는 기본단위이고,
-링크는 노드간을 연결하며, 앵커는 링크의 출발점 또는 도착점을 의미합니다.</p>
-<p>제1장에서 공부한 내용이 궁금하다면 다음을 <a href="#chapter1">클릭</a>하세요</p>
-</section>
-<section>
-<h3 id="chapter3">제3장</h3>
-<p>제3장 입니다. 제 3장은 무엇을 정의합니다.</p>
-<table><tr><th>이동주소</th><th>사이트명</th><th>설명</th></tr>
-<tr><td>구글</td><td><a href="http://www.google.com">구글</a></td><td>구글</td></tr>
-<tr><td>사이트다른문서</td><td><a href="anchor2.html">anchor2.html로이동</a></td><td>anchor2.html</td>
-<tr><td>제1장</td><td><a href="#chapter1">제1장이동(북마크이동)</a></td><td>제1장</td></table>
-</section>
-</section>
+</section> <!-- /main -->
 <aside>
-<ul>
-<li><a href=https://www.google.com><img src="http://postfiles13.naver.net/MjAxNzAzMjNfMTY5/MDAxNDkwMjc0OTI4NjUz.tus0ZZ241fJZGaRWawaoiWABtwF-nfou7e-S26x3yK8g.pzN4cQtdzMRBGzYfpW3e-MjYeu9fAOESo9M99yq-Ou0g.PNG.waypop/google.png?type=w2"alt="구글"/></a></li>
-<li><a href=https://www.facebook.com><img src="http://postfiles11.naver.net/MjAxNzAzMjNfOTkg/MDAxNDkwMjc0OTI4NDQ2.LfDwKWbB1pij499yTxOKToMPwnMPoaegr6wKwDjlAjgg.r9H9-4gOm46XO8ekp_MaOJwVM6th1oT_rMuc3Uza0bEg.PNG.waypop/facebook.png?type=w2" alt="페이스북"/></a></li>
-<li><a href=https://www.twitter.com><img src="http://postfiles11.naver.net/MjAxNzAzMjNfOTgg/MDAxNDkwMjc0OTI4ODY2.ZIDkXJgVb19TYjKC7TMSEyS2ASP7EYw-yaoVIuNhh4Ug.GwEfWlL-Gn1Nde05240sNKyCGAKK1B1f0V1O3Sc2cXog.PNG.waypop/twitter.png?type=w2" alt="트위터1"/></a></li>
-</ul>
-</aside>
-<footer>
-<p>&copy;20XX Made by Korea. All rights reserved.</p>
-</footer>
+  <ul>
+   <li><a href=https://www.google.com><img src="http://postfiles5.naver.net/MjAxNzAzMjhfMjMx/MDAxNDkwNjc3NDI1OTAz.BmAJG67XXVrLnZmcpPxaJ5FSaxyzDILXQPIyaWE6dA4g.LOZW1ETtVkiuZnx5OtLAVLx1IzKsDDKywV59FBkxPYkg.PNG.waypop/google.png?type=w2"alt="구글"/></a></li>
+   <li><a href=https://www.facebook.com><img src="http://postfiles9.naver.net/MjAxNzAzMjhfMTc1/MDAxNDkwNjc3NDI1Nzg3.9noYnRFY_J81aQgk34n4jHKSLIWkajGzl6lkFjQJW1gg.E_viw6oYprfDfdOLEoI1v5x8jDL6nJV2we6Yrkh9bnIg.PNG.waypop/facebook.png?type=w2" alt="페이스북"/></a></li>
+   <li><a href=https://www.twitter.com><img src="http://postfiles16.naver.net/MjAxNzAzMjhfMTQy/MDAxNDkwNjc3NDI1OTgw.7OSSLVuqq3xpocK4OG8MCSLjsmUyzmYNl2RAXsqbv2Yg.uqQywBd_uBPiULGJP6sQQDzviNI3jIdO8QVP7abosyUg.PNG.waypop/twitter.png?type=w2" alt="트위터"/></a></li>
+  </ul>
+ </aside>
+ <footer>
+   <p>&copy; 20XX Made by Korea/ All rights reserved.</p>
+ </footer>
 </body>
 </html>
