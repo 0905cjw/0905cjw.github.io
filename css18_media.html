@@ -7,6 +7,28 @@
 <style>
 	ul,li{margin:0px; padding:0px; list-style-type:none;}
 	li{border:1px solid #c00; margin:3px; padding:3px; width:45%; float:left;}
+	
+	/* 반응형 스타일 지정 */
+	/* 320px ~ 600px */
+	/* all, screen, print, tv, projection... */
+	@media all and (min-width:320px) and (max-width:600px){
+		li{
+			background-color:#ffc4fa;
+			color:black;
+		}
+	}
+	@media all and (min-width:601px) and (max-width:800px){
+		li{
+			background-color:#a4ffd6;
+			color:black;
+		}
+	}
+	@media all and (min-width:801px){
+		li{
+			background-color:#ffa4c7;
+			color:black;
+		}
+	}
 </style>
 </head>
 <body>
