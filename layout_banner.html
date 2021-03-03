@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+	body{margin:0; padding:0; height:3000px;}
+	header{height:150px;}
+	#hTop, #hBottom{width:800px; margin:0 auto;}
+	#hTop{height:75px; margin:0 auto; background-color:lightgreen;}
+	#hBottom{height:75px; margin:0 auto; background-color:lightpink;}
+	#hBottom>input{width:500px; font-size:2em;}
+	#line{height:4px; position:sticky; top:0px; background-color:blue;}
+	section{width:1000px; margin:0 auto; display:flex;}
+	section>nav:nth-of-type(1){float:left; width:100px; height:300px; background-color:yellow; position:sticky; top:4px;}
+	section>article{float:left; width:800px;margin:0 auto;}
+	section>nav:nth-of-type(2){float:left; width:100px; height:350px; background-color:orange; position:sticky; top:4px;}
+	img{width:800px;}
+</style>
+</head>
+<body>
+<header>
+	<div id="hTop"></div>
+	<div id="hBottom">
+		<input type="text" placeholder="자바스크립트로 레이아웃 연습중"/>
+	</div>
+</header>
+<div id="line"> </div>
+<section>
+	<nav>aa</nav>
+	<article>
+		<img src="../img/Lighthouse.jpg"/>
+		<img src="../img/Lighthouse.jpg"/>
+		<img src="../img/Lighthouse.jpg"/>
+		<img src="../img/Lighthouse.jpg"/>
+	</article>
+	<nav>bb</nav>
+</section>
+</body>
+</html>
