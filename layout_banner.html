@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -5,36 +6,59 @@
 <title>Insert title here</title>
 <style>
 	body{margin:0; padding:0; height:3000px;}
-	header{height:150px;}
 	#hTop, #hBottom{width:800px; margin:0 auto;}
 	#hTop{height:75px; margin:0 auto; background-color:lightgreen;}
 	#hBottom{height:75px; margin:0 auto; background-color:lightpink;}
 	#hBottom>input{width:500px; font-size:2em;}
 	#line{height:4px; position:sticky; top:0px; background-color:blue;}
 	section{width:1000px; margin:0 auto; display:flex;}
-	section>nav:nth-of-type(1){float:left; width:100px; height:300px; background-color:yellow; position:sticky; top:4px;}
-	section>article{float:left; width:800px;margin:0 auto;}
-	section>nav:nth-of-type(2){float:left; width:100px; height:350px; background-color:orange; position:sticky; top:4px;}
+	#left{position:sticky; top:4px; float:left; width:100px; height:300px; background-color:yellow;}
+	section>article{float:left; width:800px;margin:0 auto; background-color:#d1fef4;}
+	#right{position:sticky; top:4px; float:left; width:100px; height:350px; background-color:orange;}
 	img{width:800px;}
 </style>
+<script>
+	function content(){
+		var img="";
+		for(var i=1; i<5; i++){
+			img+="<img src='0905cjw.github.io/Lighthouse.jpg'/>";
+		}
+		document.getElementById("img").innerHTML=img;
+	}
+	var text=['자','바','스','크','립','트', '로',' ','레','이','아','웃',' ','연','습','중'];
+	var txt='자바스크립트로 레이아웃 연습중';
+	var i=0;
+	
+	function textBox(){		
+		var tag=document.getElementById("tb");
+		// tag.placeholder+=text[i];
+		tag.placeholder+=txt.charAt(i);
+		i+=1;
+		if(i>txt.length){
+			tag.placeholder="";
+			i=0;
+		}
+	}
+</script>
 </head>
-<body>
-<header>
-	<div id="hTop"></div>
-	<div id="hBottom">
-		<input type="text" placeholder="자바스크립트로 레이아웃 연습중"/>
-	</div>
-</header>
-<div id="line"> </div>
+<body onload="content(); setInterval('textBox()', 200)">
+	<header id="hTop" onclick="touch();"></header>
+	<nav id="hBottom">
+		<input type="text" id="tb"/>
+	</nav>
+
+<div id="line"></div>
 <section>
-	<nav>aa</nav>
-	<article>
-		<img src="../img/Lighthouse.jpg"/>
-		<img src="../img/Lighthouse.jpg"/>
-		<img src="../img/Lighthouse.jpg"/>
-		<img src="../img/Lighthouse.jpg"/>
-	</article>
-	<nav>bb</nav>
+	<nav id="left">aa</nav>
+	<article id="img"></article>
+	<nav id="right">bb</nav>
 </section>
+<script>
+	//var head=document.getElementById("head");
+	var htop=document.getElementById("hTop");
+	function touch(){
+		htop.style.display='none';
+	}
+</script>
 </body>
 </html>
