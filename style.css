@@ -52,6 +52,7 @@ h3, h4, table, tr, td{
 	right:32px;
 	font-size:24px;
 	color:#c9c9c9;
+	cursor:pointer;
 }
 
 section, p{
@@ -98,6 +99,7 @@ section>div:last-child{
 table{
 	width:70%;
 	margin:10px auto;
+	background-color:#ddd;
 }
 
 .tag{
@@ -117,6 +119,7 @@ tr>td:first-child>img{
 /* content */
 tr>td:last-child{
 	width:65%;
+	background-color:pink;
 }
 
 .logo{
@@ -162,7 +165,7 @@ tr>td:last-child{
 	color:#13a89e;
 }
 
-@media screen and (max-width:572px){
+@media screen and (max-width:715px){
 	.header{
 		flex-direction: column;
 		padding:8px;
@@ -209,14 +212,17 @@ tr>td:last-child{
 	.backend{
 		width:100px;
 	}
+	
+	#hello{
+		display:none;
+	}
 }
 
 #home{
 	background-image:url(banner.png);
 }
 
-#home_txt{
-	height:100%;
+.home_txt{
 	text-align:center;
 	font-size:3em;
 	font-weight:bold;
