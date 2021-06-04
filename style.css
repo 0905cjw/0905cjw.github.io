@@ -213,6 +213,22 @@ tr>td:last-child{
 		width:100px;
 	}
 	
+	.skills{
+		display:inline-block;
+		width:100px;
+		margin:10px;
+	}
+
+	.skills>img{
+		width:70px;
+		height:70px;
+	}
+
+	.skill>h4{
+		width:70px;
+		height:46.4px;
+	}
+	
 	#hello{
 		display:none;
 	}
