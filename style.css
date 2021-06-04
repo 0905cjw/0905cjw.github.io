@@ -63,7 +63,7 @@ section, p{
 /* 상세 메뉴 내용 */
 section>div{
 	text-align:center;
-	margin:20px auto;
+	margin:50px auto;
 }
 
 /* header 윗부분에 margin이 들어가기 때문에 제거해줌 */
@@ -199,9 +199,7 @@ tr>td:last-child{
 		display:flex;
 	}
 	
-	.subject{
-		padding:50px 0;
-	}
+	
 	
 	/* logo */
 	tr>td:first-child{
