@@ -63,17 +63,17 @@ section, p{
 /* 상세 메뉴 내용 */
 section>div{
 	text-align:center;
-	margin:50px auto;
+	padding-top:50px;
 }
 
 /* header 윗부분에 margin이 들어가기 때문에 제거해줌 */
 section>div:first-child{
-	margin:0;
+	padding:0;
 }
 
 /* 20+20=40인데 bottom이 20px이라 40px로 바꿔줌 */
 section>div:last-child{
-	margin-bottom:40px;
+	padding-bottom:40px;
 }
 
 .subject{
@@ -199,8 +199,6 @@ tr>td:last-child{
 		display:flex;
 	}
 	
-	
-	
 	/* logo */
 	tr>td:first-child{
 		display:none;
@@ -213,22 +211,6 @@ tr>td:last-child{
 	
 	.backend{
 		width:100px;
-	}
-	
-	.skills{
-		display:inline-block;
-		width:80px;
-		margin:10px;
-	}
-
-	.skills>img{
-		width:70px;
-		height:70px;
-	}
-
-	.skill>h4{
-		width:70px;
-		height:46.4px;
 	}
 	
 	#hello{
