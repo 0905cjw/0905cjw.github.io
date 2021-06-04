@@ -99,7 +99,6 @@ section>div:last-child{
 table{
 	width:70%;
 	margin:10px auto;
-	background-color:#ddd;
 }
 
 .tag{
@@ -119,7 +118,6 @@ tr>td:first-child>img{
 /* content */
 tr>td:last-child{
 	width:65%;
-	background-color:pink;
 }
 
 .logo{
