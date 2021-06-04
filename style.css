@@ -143,13 +143,13 @@ tr>td:last-child{
 
 .skills{
 	display:inline-block;
-	width:130px;
+	width:100px;
 	margin:10px;
 }
 
 .skills>img{
-	width:100px;
-	height:100px;
+	width:80px;
+	height:80px;
 }
 
 .skill>h4{
