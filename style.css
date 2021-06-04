@@ -215,17 +215,17 @@ tr>td:last-child{
 	
 	.skills{
 		display:inline-block;
-		width:100px;
+		width:80px;
 		margin:10px;
 	}
 
 	.skills>img{
-		width:70px;
-		height:70px;
+		width:50px;
+		height:50px;
 	}
 
 	.skill>h4{
-		width:70px;
+		width:50px;
 		height:46.4px;
 	}
 	
