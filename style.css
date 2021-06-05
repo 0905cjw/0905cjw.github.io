@@ -5,7 +5,6 @@ body{
 }
 a{
 	text-decoration: none;
-	color:white;
 }
 
 h3, h4, table, tr, td{
@@ -44,6 +43,10 @@ h3, h4, table, tr, td{
 
 .header_menu li:last-child{
 	margin-right:25px;
+}
+
+.header_menu>li>a{
+	color:white;
 }
 
 .header_toggle{
@@ -131,6 +134,10 @@ tr>td:last-child{
 	transition:0.5s;
 }
 
+.index>img{
+	border:1px solid #ddd;
+}
+
 /*   skill   */
 #skill>div{
 	margin:0 auto;
@@ -163,7 +170,7 @@ tr>td:last-child{
 	color:#13a89e;
 }
 
-@media screen and (max-width:715px){
+@media screen and (max-width:790px){ /*715*/
 	.header{
 		flex-direction: column;
 		padding:8px;
@@ -226,3 +233,16 @@ tr>td:last-child{
 	font-weight:bold;
 	color:white;
 }
+
+.detail{
+	margin:0 auto;
+	width:70%;
+	text-align:left;
+	border:1px solid #ddd;
+}
+
+.d_title{
+	font-size:1.5em;
+	line-height:2em;
+}
+
