@@ -82,6 +82,8 @@ section>div:last-child{
 .subject{
 	line-height:2.2em;
 	font-size:2.1em;
+	font-weight:bold;
+	text-shadow: 6px 2px 2px #ccc;
 }
 
 .content{
@@ -96,6 +98,15 @@ section>div:last-child{
 .p_tag{
 	margin:15px 0;
 	font-weight:lighter;
+}
+
+.link{
+	display:inline-block;
+}
+
+.link>*{
+	float:left;
+	line-height:69.8px;
 }
 
 /*   project   */
