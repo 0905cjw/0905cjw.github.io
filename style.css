@@ -175,6 +175,10 @@ tr>td:last-child{
 	border-bottom:1px solid #ddd;
 }
 
+#skill>div:last-child{
+	border:0;
+}
+
 .skills{
 	display:inline-block;
 	width:100px;
