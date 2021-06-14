@@ -163,7 +163,7 @@ tr>td:last-child{
 	transition:0.5s;
 }
 
-.index>img{
+.index>a>img{
 	border:1px solid #ddd;
 }
 
